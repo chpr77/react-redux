@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 //npm install react-redux for provider to connect with store
 import {Provider} from 'react-redux' // to connect with store
@@ -22,7 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>    
       <React.StrictMode>
-        <SagaApp />
+        <App />
       </React.StrictMode>    
   </Provider>
 );
